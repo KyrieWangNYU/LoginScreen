@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #29434e#29434e;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="539.0" layoutY="14.0" prefHeight="26.0" prefWidth="135.0" text="Welcome..." textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="27.0" layoutY="67.0" prefHeight="168.0" prefWidth="647.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="159.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/WechatIMG15098.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="154.0" layoutY="32.0" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #ffffff;" text="Name:" />
+            <Label fx:id="detialsAge" layoutX="154.0" layoutY="71.0" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #ffffff;" text="Age:" />
+            <Label fx:id="detailsProfession" layoutX="154.0" layoutY="106.0" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #ffffff;" text="Profession:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="265.0" layoutY="248.0" prefHeight="145.0" prefWidth="409.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="41.0" prefWidth="409.0" style="-fx-background-color: #546e7a#546e7a;">
+               <effect>
+                  <Blend />
+               </effect>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="107.0" layoutY="14.0" prefHeight="17.0" prefWidth="196.0" text="How to Find Me" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="64.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-github-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="72.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="64.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-linkedin-50.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="detailsWeb" layoutX="83.0" layoutY="50.0" prefHeight="25.0" prefWidth="218.0" text="github.com/KyrieWangNYU" underline="true" />
+            <Hyperlink fx:id="detailsLinkedIn" layoutX="83.0" layoutY="87.0" prefHeight="25.0" prefWidth="206.0" text="linkedin.com/in/keheng-wang" underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
